@@ -3,18 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grabpflege Krefeld & Tönisvorst | Liebervolle & Zuverlässige Pflege</title>
+  <title>Grabpflege Krefeld & Tönisvorst | Liebevolle & Zuverlässige Pflege</title>
   <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts für schicke Überschriften -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    h1, h2, h3, .font-serif-custom { font-family: 'Playfair Display', serif; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+  </style>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+<body class="bg-slate-50 text-slate-800 antialiased">
 
   <!-- Header / Navigation -->
   <header class="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-emerald-100 shadow-sm">
     <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
       <a href="index.html" class="flex items-center space-x-2">
         <span class="text-2xl">🌿</span>
-        <span class="font-bold text-xl text-emerald-950 tracking-tight">Grabpflege Krefeld</span>
+        <span class="font-bold text-xl text-emerald-950 tracking-tight font-serif-custom">Grabpflege Krefeld</span>
       </a>
 
       <nav class="hidden md:flex space-x-8 text-sm font-semibold text-slate-600">
@@ -24,9 +32,15 @@
         <a href="kontakt.html" class="hover:text-emerald-700 transition">Kontakt</a>
       </nav>
 
-      <a href="https://wa.me/491234567890" target="_blank" class="bg-emerald-700 hover:bg-emerald-800 text-white text-sm font-semibold px-4 py-2.5 rounded-full shadow-md transition flex items-center gap-2">
-        <span>💬</span> WhatsApp Service
-      </a>
+      <!-- Oben rechts: Telefon & WhatsApp -->
+      <div class="flex items-center gap-3">
+        <a href="tel:01701234567" class="hidden sm:flex items-center gap-1.5 text-xs font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-2 rounded-full transition">
+          <span>📞</span> 0170 1234567
+        </a>
+        <a href="https://wa.me/491234567890" target="_blank" class="bg-emerald-700 hover:bg-emerald-800 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-md transition flex items-center gap-2">
+          <span>💬</span> WhatsApp
+        </a>
+      </div>
     </div>
   </header>
 
@@ -36,15 +50,16 @@
       <span class="inline-block bg-emerald-800/80 text-emerald-200 text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full mb-6 border border-emerald-700">
         Krefeld & Tönisvorst
       </span>
-      <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
-        Würdevolle Grabpflege mit persönlichem Foto-Updates
+      <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight font-serif-custom">
+        Würdevolle Grabpflege mit persönlichen Foto-Updates
       </h1>
       <p class="text-lg md:text-xl text-emerald-100 max-w-2xl mx-auto mb-8 font-light">
         Wir kümmern uns zuverlässig und liebevoll um die Ruhestätte Ihrer Angehörigen. Nach jeder Pflege erhalten Sie auf Wunsch direkt ein Foto per WhatsApp.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="kontakt.html" class="bg-white text-emerald-950 hover:bg-emerald-50 font-bold px-8 py-3.5 rounded-full shadow-lg transition text-center">
-          Kostenloses Angebot anfragen
+        <!-- WhatsApp Festpreis Button -->
+        <a href="https://wa.me/491234567890?text=Hallo,%20ich%20möchte%20gerne%20einen%20Festpreis%20per%20WhatsApp%20anfragen." target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-8 py-3.5 rounded-full shadow-lg transition text-center flex items-center justify-center gap-2">
+          <span>💬</span> Festpreis per WhatsApp anfragen
         </a>
         <a href="leistungen.html" class="border border-emerald-400/40 hover:bg-emerald-800/50 text-white font-medium px-8 py-3.5 rounded-full transition text-center">
           Unsere Leistungen ansehen
@@ -59,18 +74,18 @@
       <div class="bg-emerald-50 rounded-3xl p-8 md:p-12 border border-emerald-100 shadow-sm flex flex-col md:flex-row items-center gap-8">
         <div class="md:w-1/2">
           <span class="text-emerald-800 font-semibold text-sm uppercase tracking-wider">Transparenz & Vertrauen</span>
-          <h2 class="text-3xl font-bold text-emerald-950 mt-2 mb-4">Ihr Beruhigendes Gefühl: Das WhatsApp-Fotoupdate</h2>
-          <p class="text-slate-600 mb-6 leading-relaxed">
+          <h2 class="text-3xl font-bold text-emerald-950 mt-2 mb-4 font-serif-custom">Ihr beruhigendes Gefühl: Das WhatsApp-Fotoupdate</h2>
+          <p class="text-slate-600 mb-6 leading-relaxed text-sm md:text-base">
             Egal ob Sie beruflich viel unterwegs sind, nicht mehr mobil sind oder weiter weg wohnen: Wir halten Sie stets auf dem Laufenden. Nach jedem Pflegeeinsatz schicken wir Ihnen ein frisches Foto direkt aufs Handy.
           </p>
-          <ul class="space-y-3 font-medium text-slate-700">
+          <ul class="space-y-3 font-medium text-slate-700 text-sm">
             <li class="flex items-center gap-3"><span class="text-emerald-600">✓</span> Direkt nach der Säuberung & Bepflanzung</li>
             <li class="flex items-center gap-3"><span class="text-emerald-600">✓</span> Volle Transparenz ohne versteckte Kosten</li>
             <li class="flex items-center gap-3"><span class="text-emerald-600">✓</span> Persönlicher Ansprechpartner vor Ort</li>
           </ul>
         </div>
         
-        <!-- Platzhalter für WhatsApp Simulation -->
+        <!-- WhatsApp Simulation -->
         <div class="md:w-1/2 w-full">
           <div class="bg-slate-900 rounded-2xl p-4 shadow-xl text-slate-100 max-w-sm mx-auto border border-slate-700">
             <div class="flex items-center gap-3 border-b border-slate-800 pb-3 mb-3">
@@ -81,8 +96,8 @@
               </div>
             </div>
             <div class="bg-emerald-900/40 rounded-xl p-3 mb-3 text-xs border border-emerald-800/50">
-              <div class="bg-emerald-800/60 rounded-lg h-32 flex items-center justify-center text-slate-300 font-medium mb-2 border border-emerald-700/50">
-                [ 📸 Foto vom gepflegten Grab ]
+              <div class="bg-emerald-800/60 rounded-lg h-32 flex items-center justify-center text-slate-300 font-medium mb-2 border border-emerald-700/50 text-center px-2">
+                [ 📸 Hier kann Ihr Bild eingefügt werden ]
               </div>
               <p class="text-slate-200">Guten Tag! Die Frühlingsbepflanzung ist abgeschlossen und das Grab wurde gründlich gesäubert. 🌸</p>
               <span class="text-[9px] text-slate-400 block text-right mt-1">14:15 Uhr ✓✓</span>
@@ -96,40 +111,40 @@
   <!-- Vorher-Nachher Platzhalterbereich -->
   <section class="py-16 px-4 bg-slate-50">
     <div class="max-w-5xl mx-auto text-center">
-      <h2 class="text-3xl font-bold text-slate-900 mb-3">Unsere Arbeit im Überblick</h2>
-      <p class="text-slate-600 mb-12 max-w-2xl mx-auto">Sorgfalt, Liebe zum Detail und handwerkliches Geschick stehen bei jeder Pflege an erster Stelle.</p>
+      <h2 class="text-3xl font-bold text-slate-900 mb-3 font-serif-custom">Unsere Arbeit im Überblick</h2>
+      <p class="text-slate-600 mb-12 max-w-2xl mx-auto text-sm md:text-base">Sorgfalt, Liebe zum Detail und handwerkliches Geschick stehen bei jeder Pflege an erster Stelle.</p>
 
       <div class="grid md:grid-cols-2 gap-8">
         <!-- Beispiel Karte 1 -->
         <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 text-left">
-          <div class="h-48 bg-slate-100 rounded-xl flex items-center justify-center text-slate-400 font-medium mb-4 border border-dashed border-slate-300">
-            Vorher / Nachher Bild
+          <div class="h-48 bg-slate-100 rounded-xl flex items-center justify-center text-slate-400 font-medium mb-4 border border-dashed border-slate-300 text-center px-4">
+            Hier kann Ihr Bild eingefügt werden (Vorher / Nachher)
           </div>
-          <h3 class="text-xl font-bold text-slate-800 mb-2">Saisonale Bepflanzung & Beetpflege</h3>
+          <h3 class="text-xl font-bold text-slate-800 mb-2 font-serif-custom">Saisonale Bepflanzung & Beetpflege</h3>
           <p class="text-slate-600 text-sm">Entfernung von Unkraut, Lockern der Erde und frische Bepflanzung passend zur Jahreszeit.</p>
         </div>
 
         <!-- Beispiel Karte 2 -->
         <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 text-left">
-          <div class="h-48 bg-slate-100 rounded-xl flex items-center justify-center text-slate-400 font-medium mb-4 border border-dashed border-slate-300">
-            Vorher / Nachher Bild
+          <div class="h-48 bg-slate-100 rounded-xl flex items-center justify-center text-slate-400 font-medium mb-4 border border-dashed border-slate-300 text-center px-4">
+            Hier kann Ihr Bild eingefügt werden (Grabsteinreinigung)
           </div>
-          <h3 class="text-xl font-bold text-slate-800 mb-2">Grabstein- & Eckenreinigung</h3>
+          <h3 class="text-xl font-bold text-slate-800 mb-2 font-serif-custom">Grabstein- & Eckenreinigung</h3>
           <p class="text-slate-600 text-sm">Beitrag zur Werterhaltung: Säuberung von Moos, Flechten und Ablagerungen an Stein und Einfassung.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer / Fußzeile -->
+  <!-- Footer -->
   <footer class="bg-slate-900 text-slate-400 py-12 px-4 border-t border-slate-800">
     <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 mb-8 text-sm">
       <div>
-        <h4 class="text-white font-bold text-base mb-3">Grabpflege Krefeld</h4>
+        <h4 class="text-white font-bold text-base mb-3 font-serif-custom">Grabpflege Krefeld</h4>
         <p class="leading-relaxed">Ihre zuverlässige Grabpflege in Krefeld, Tönisvorst und Umgebung. Liebevoll, sauber und transparent.</p>
       </div>
       <div>
-        <h4 class="text-white font-bold text-base mb-3">Navigation</h4>
+        <h4 class="text-white font-bold text-base mb-3 font-serif-custom">Navigation</h4>
         <ul class="space-y-2">
           <li><a href="index.html" class="hover:text-white transition">Startseite</a></li>
           <li><a href="leistungen.html" class="hover:text-white transition">Leistungen & Preise</a></li>
@@ -138,15 +153,12 @@
         </ul>
       </div>
       <div>
-        <h4 class="text-white font-bold text-base mb-3">Einsatzgebiet</h4>
+        <h4 class="text-white font-bold text-base mb-3 font-serif-custom">Einsatzgebiet</h4>
         <p>Krefeld (alle Friedhöfe)</p>
         <p>Tönisvorst (St. Tönis & Vorst)</p>
       </div>
     </div>
-    <div class="max-w-6xl mx-auto border-t border-slate-800 pt-6 text-center text-xs text-slate-500">
-      <p>© 2026 Grabpflege Krefeld. Alle Rechte vorbehalten.</p>
-    </div>
   </footer>
 
 </body>
-</html>ss
+</html>
