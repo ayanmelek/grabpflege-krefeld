@@ -12,11 +12,13 @@
     h1, h2, h3, .font-serif-custom { font-family: 'Playfair Display', serif; }
     body { font-family: 'Plus Jakarta Sans', sans-serif; }
     
-    /* Elegantes Punkt-/Struktur-Muster */
-    .bg-pattern-emerald {
+    /* Kombinierter Farbverlauf (dunkel -> hell) mit dezentem Punktmuster */
+    .bg-pattern-gradient {
       background-color: #022c22;
-      background-image: radial-gradient(rgba(52, 211, 153, 0.15) 1px, transparent 1px);
-      background-size: 24px 24px;
+      background-image: 
+        radial-gradient(rgba(52, 211, 153, 0.18) 1px, transparent 1px),
+        linear-gradient(to bottom, #022c22 0%, #064e3b 60%, #047857 100%);
+      background-size: 24px 24px, 100% 100%;
     }
   </style>
 </head>
@@ -48,8 +50,8 @@
     </div>
   </header>
 
-  <!-- Hero-Bereich mit echtem, edlen Hintergrund-Muster -->
-  <section class="relative bg-pattern-emerald text-white py-20 px-4 overflow-hidden border-b border-emerald-800">
+  <!-- Hero-Bereich mit sanftem Farbverlauf + feinem Muster -->
+  <section class="relative bg-pattern-gradient text-white py-20 px-4 overflow-hidden border-b border-emerald-800">
     <div class="max-w-4xl mx-auto text-center relative z-10">
       <span class="inline-block bg-emerald-800/80 text-emerald-200 text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full mb-6 border border-emerald-700">
         Krefeld & Tönisvorst
