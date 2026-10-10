@@ -5,18 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kontakt & Anfrage | Grabpflege Krefeld</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Google Fonts für schicke Überschriften -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     h1, h2, h3, .font-serif-custom { font-family: 'Playfair Display', serif; }
     body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .bg-pattern-emerald {
+      background-color: #022c22;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%20a7f3d0' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
   </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased">
 
-  <!-- Header / Navigation -->
   <header class="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-emerald-100 shadow-sm">
     <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
       <a href="index.html" class="flex items-center space-x-2">
@@ -31,7 +33,6 @@
         <a href="kontakt.html" class="text-emerald-700 font-bold border-b-2 border-emerald-700 pb-1">Kontakt</a>
       </nav>
 
-      <!-- Direkter Anruf & WhatsApp -->
       <div class="flex items-center gap-3">
         <a href="tel:01701234567" class="hidden sm:flex items-center gap-1.5 text-xs font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-2 rounded-full transition">
           <span>📞</span> 0170 1234567
@@ -43,8 +44,8 @@
     </div>
   </header>
 
-  <!-- Hero Bereich -->
-  <section class="bg-emerald-950 text-white py-16 px-4">
+  <!-- Hero Bereich mit Muster -->
+  <section class="bg-pattern-emerald text-white py-16 px-4 border-b border-emerald-800">
     <div class="max-w-4xl mx-auto text-center">
       <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-4 font-serif-custom">Kontaktieren Sie mich</h1>
       <p class="text-emerald-100 text-lg max-w-2xl mx-auto font-light">
@@ -53,11 +54,9 @@
     </div>
   </section>
 
-  <!-- Kontakt & Formular Bereich -->
   <section class="py-16 px-4 max-w-5xl mx-auto">
     <div class="grid md:grid-cols-2 gap-12">
       
-      <!-- Kontaktwege & Hervorgehobene E-Mail -->
       <div class="space-y-6">
         <div>
           <h2 class="text-2xl font-bold text-slate-900 mb-3 font-serif-custom">Auf allen Wegen erreichbar</h2>
@@ -66,7 +65,6 @@
           </p>
         </div>
 
-        <!-- E-Mail Box (Hervorgehoben) -->
         <a href="mailto:kontakt@grabpflege-krefeld.de" class="block bg-white p-6 rounded-2xl border-2 border-emerald-600 hover:bg-emerald-50/50 transition shadow-sm">
           <div class="flex items-center gap-4">
             <span class="text-3xl">✉️</span>
@@ -78,7 +76,6 @@
           </div>
         </a>
 
-        <!-- WhatsApp Box -->
         <a href="https://wa.me/491234567890" target="_blank" class="block bg-emerald-50 p-6 rounded-2xl border border-emerald-200 hover:bg-emerald-100 transition shadow-sm">
           <div class="flex items-center gap-4">
             <span class="text-3xl">💬</span>
@@ -89,18 +86,15 @@
           </div>
         </a>
 
-        <!-- Infos zum Einsatzgebiet -->
         <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-2 text-sm">
           <p class="font-bold text-slate-800 font-serif-custom text-base">Einsatzgebiet:</p>
           <p class="text-slate-600">Krefeld (alle Friedhöfe) & Tönisvorst (St. Tönis & Vorst)</p>
         </div>
       </div>
 
-      <!-- Kontaktformular (Mit E-Mail Feld) -->
       <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm">
         <h3 class="text-xl font-bold text-slate-900 mb-6 font-serif-custom">Nachricht direkt senden</h3>
         
-        <!-- Hinweis zur kostenlosen Nutzung: Später ersetzen wir die action-Adresse mit deinem kostenlosen Formspree-Link -->
         <form action="https://formspree.io/f/DEINE_FORM_ID" method="POST" class="space-y-4">
           <div>
             <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-1">Ihr Name</label>
@@ -131,7 +125,6 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="bg-slate-900 text-slate-400 py-12 px-4 border-t border-slate-800">
     <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 mb-8 text-sm">
       <div>

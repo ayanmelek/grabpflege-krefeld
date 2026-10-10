@@ -5,18 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Leistungen & Preise | Grabpflege Krefeld</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Google Fonts für schicke Überschriften -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     h1, h2, h3, .font-serif-custom { font-family: 'Playfair Display', serif; }
     body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .bg-pattern-emerald {
+      background-color: #022c22;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%20a7f3d0' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
   </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased">
 
-  <!-- Header / Navigation -->
   <header class="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-emerald-100 shadow-sm">
     <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
       <a href="index.html" class="flex items-center space-x-2">
@@ -31,7 +33,6 @@
         <a href="kontakt.html" class="hover:text-emerald-700 transition">Kontakt</a>
       </nav>
 
-      <!-- Oben rechts: Telefon & WhatsApp -->
       <div class="flex items-center gap-3">
         <a href="tel:01701234567" class="hidden sm:flex items-center gap-1.5 text-xs font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-2 rounded-full transition">
           <span>📞</span> 0170 1234567
@@ -43,8 +44,8 @@
     </div>
   </header>
 
-  <!-- Hero Bereich -->
-  <section class="bg-emerald-950 text-white py-16 px-4">
+  <!-- Hero Bereich mit Muster -->
+  <section class="bg-pattern-emerald text-white py-16 px-4 border-b border-emerald-800">
     <div class="max-w-4xl mx-auto text-center">
       <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-4 font-serif-custom">Unsere Leistungen & Angebote</h1>
       <p class="text-emerald-100 text-lg max-w-2xl mx-auto font-light">
@@ -53,11 +54,9 @@
     </div>
   </section>
 
-  <!-- Leistungsübersicht Grid -->
   <section class="py-16 px-4 max-w-6xl mx-auto">
     <div class="grid md:grid-cols-3 gap-8">
       
-      <!-- Paket 1: Einzelfallpflege -->
       <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
         <div>
           <div class="flex justify-between items-start mb-4">
@@ -75,7 +74,6 @@
         <a href="kontakt.html" class="block text-center bg-slate-900 hover:bg-slate-800 text-white font-semibold py-3 rounded-xl transition">Jetzt anfragen</a>
       </div>
 
-      <!-- Paket 2: Dauerpflege / Jahrespflege -->
       <div class="bg-white rounded-3xl p-8 border-2 border-emerald-600 shadow-lg relative flex flex-col justify-between">
         <span class="absolute -top-3 left-1/2 -translate-x-1/2 text-xs font-bold uppercase tracking-wider text-white bg-emerald-600 px-4 py-1 rounded-full shadow-sm">Beliebt</span>
         <div>
@@ -95,7 +93,6 @@
         <a href="kontakt.html" class="block text-center bg-emerald-700 hover:bg-emerald-800 text-white font-semibold py-3 rounded-xl shadow-md transition">Angebot anfordern</a>
       </div>
 
-      <!-- Paket 3: Saison-Bepflanzung -->
       <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
         <div>
           <div class="flex justify-between items-start mb-4">
@@ -115,8 +112,7 @@
 
     </div>
 
-    <!-- Individueller Wunsch Hinweiskasten -->
-    <div class="mt-12 bg-emerald-50 border border-emerald-200 rounded-3xl p-8 text-center max-w-3xl mx-auto shadow-sm">
+    <div class="mt-12 bg-emerald-50/80 border border-emerald-200 rounded-3xl p-8 text-center max-w-3xl mx-auto shadow-sm">
       <h3 class="text-2xl font-bold text-emerald-950 mb-2 font-serif-custom">Sie haben eine andere Vorstellung oder spezielle Wünsche?</h3>
       <p class="text-slate-600 text-sm md:text-base mb-6 leading-relaxed">
         Jedes Grab und jede Geschichte ist einzigartig. Wenn Sie eine ganz spezifische Pflege, Sonderbepflanzung oder Hilfe bei kleineren Steinarbeiten benötigen, sprechen Sie mich einfach unverbindlich an. Wir finden gemeinsam die passende Lösung!
@@ -127,7 +123,6 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="bg-slate-900 text-slate-400 py-12 px-4 border-t border-slate-800">
     <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 mb-8 text-sm">
       <div>

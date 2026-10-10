@@ -5,18 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Über mich | Grabpflege Krefeld</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Google Fonts für schicke, elegante Überschriften -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     h1, h2, h3, .font-serif-custom { font-family: 'Playfair Display', serif; }
     body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .bg-pattern-emerald {
+      background-color: #022c22;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%20a7f3d0' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
   </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased">
 
-  <!-- Header / Navigation -->
   <header class="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-emerald-100 shadow-sm">
     <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
       <a href="index.html" class="flex items-center space-x-2">
@@ -31,7 +33,6 @@
         <a href="kontakt.html" class="hover:text-emerald-700 transition">Kontakt</a>
       </nav>
 
-      <!-- Direkter Anruf & WhatsApp -->
       <div class="flex items-center gap-3">
         <a href="tel:01701234567" class="hidden sm:flex items-center gap-1.5 text-xs font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-2 rounded-full transition">
           <span>📞</span> 0170 1234567
@@ -43,8 +44,8 @@
     </div>
   </header>
 
-  <!-- Hero Bereich -->
-  <section class="bg-emerald-950 text-white py-16 px-4">
+  <!-- Hero Bereich mit Muster -->
+  <section class="bg-pattern-emerald text-white py-16 px-4 border-b border-emerald-800">
     <div class="max-w-4xl mx-auto text-center">
       <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-4 font-serif-custom">Über mich & meine Philosophie</h1>
       <p class="text-emerald-100 text-lg max-w-2xl mx-auto font-light">
@@ -53,13 +54,11 @@
     </div>
   </section>
 
-  <!-- Inhalt Bereich -->
   <section class="py-16 px-4 max-w-4xl mx-auto">
     <div class="bg-white rounded-3xl p-8 md:p-12 border border-slate-200 shadow-sm space-y-8">
       
       <div class="flex flex-col md:flex-row gap-8 items-center">
-        <!-- Profilbild Platzhalter -->
-        <div class="w-48 h-48 bg-emerald-100 rounded-2xl flex-shrink-0 flex items-center justify-center text-emerald-800 font-bold border border-emerald-200 text-center p-4">
+        <div class="w-48 h-48 bg-emerald-100/70 rounded-2xl flex-shrink-0 flex items-center justify-center text-emerald-800 font-bold border border-emerald-200 text-center p-4">
           [ 📸 Dein Foto später ]
         </div>
         <div>
@@ -75,7 +74,6 @@
 
       <hr class="border-slate-100" />
 
-      <!-- Werte Grid -->
       <div class="grid md:grid-cols-3 gap-6 pt-4">
         <div class="bg-emerald-50/50 p-6 rounded-2xl border border-emerald-100">
           <span class="text-2xl mb-2 block">🤝</span>
@@ -97,7 +95,6 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="bg-slate-900 text-slate-400 py-12 px-4 border-t border-slate-800">
     <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 mb-8 text-sm">
       <div>

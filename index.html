@@ -4,15 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Grabpflege Krefeld & Tönisvorst | Liebevolle & Zuverlässige Pflege</title>
-  <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Google Fonts für schicke Überschriften -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     h1, h2, h3, .font-serif-custom { font-family: 'Playfair Display', serif; }
     body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    /* Eleganter Muster-Hintergrund für die grünen Banner */
+    .bg-pattern-emerald {
+      background-color: #022c22;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%20a7f3d0' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
   </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased">
@@ -32,7 +35,6 @@
         <a href="kontakt.html" class="hover:text-emerald-700 transition">Kontakt</a>
       </nav>
 
-      <!-- Oben rechts: Telefon & WhatsApp -->
       <div class="flex items-center gap-3">
         <a href="tel:01701234567" class="hidden sm:flex items-center gap-1.5 text-xs font-semibold bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-2 rounded-full transition">
           <span>📞</span> 0170 1234567
@@ -44,8 +46,8 @@
     </div>
   </header>
 
-  <!-- Hero-Bereich (Hauptbanner) -->
-  <section class="relative bg-gradient-to-b from-emerald-900 to-emerald-950 text-white py-20 px-4 overflow-hidden">
+  <!-- Hero-Bereich mit feinem Muster & Farbverlauf -->
+  <section class="relative bg-pattern-emerald bg-gradient-to-b from-emerald-900/90 to-emerald-950 text-white py-20 px-4 overflow-hidden border-b border-emerald-800">
     <div class="max-w-4xl mx-auto text-center relative z-10">
       <span class="inline-block bg-emerald-800/80 text-emerald-200 text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full mb-6 border border-emerald-700">
         Krefeld & Tönisvorst
@@ -57,7 +59,6 @@
         Wir kümmern uns zuverlässig und liebevoll um die Ruhestätte Ihrer Angehörigen. Nach jeder Pflege erhalten Sie auf Wunsch direkt ein Foto per WhatsApp.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <!-- WhatsApp Festpreis Button -->
         <a href="https://wa.me/491234567890?text=Hallo,%20ich%20möchte%20gerne%20einen%20Festpreis%20per%20WhatsApp%20anfragen." target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-8 py-3.5 rounded-full shadow-lg transition text-center flex items-center justify-center gap-2">
           <span>💬</span> Festpreis per WhatsApp anfragen
         </a>
@@ -71,7 +72,7 @@
   <!-- Besonderheit: WhatsApp Foto-Service -->
   <section class="py-16 px-4 bg-white">
     <div class="max-w-5xl mx-auto">
-      <div class="bg-emerald-50 rounded-3xl p-8 md:p-12 border border-emerald-100 shadow-sm flex flex-col md:flex-row items-center gap-8">
+      <div class="bg-emerald-50/70 rounded-3xl p-8 md:p-12 border border-emerald-100 shadow-sm flex flex-col md:flex-row items-center gap-8">
         <div class="md:w-1/2">
           <span class="text-emerald-800 font-semibold text-sm uppercase tracking-wider">Transparenz & Vertrauen</span>
           <h2 class="text-3xl font-bold text-emerald-950 mt-2 mb-4 font-serif-custom">Ihr beruhigendes Gefühl: Das WhatsApp-Fotoupdate</h2>
@@ -85,7 +86,6 @@
           </ul>
         </div>
         
-        <!-- WhatsApp Simulation -->
         <div class="md:w-1/2 w-full">
           <div class="bg-slate-900 rounded-2xl p-4 shadow-xl text-slate-100 max-w-sm mx-auto border border-slate-700">
             <div class="flex items-center gap-3 border-b border-slate-800 pb-3 mb-3">
@@ -115,7 +115,6 @@
       <p class="text-slate-600 mb-12 max-w-2xl mx-auto text-sm md:text-base">Sorgfalt, Liebe zum Detail und handwerkliches Geschick stehen bei jeder Pflege an erster Stelle.</p>
 
       <div class="grid md:grid-cols-2 gap-8">
-        <!-- Beispiel Karte 1 -->
         <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 text-left">
           <div class="h-48 bg-slate-100 rounded-xl flex items-center justify-center text-slate-400 font-medium mb-4 border border-dashed border-slate-300 text-center px-4">
             Hier kann Ihr Bild eingefügt werden (Vorher / Nachher)
@@ -124,7 +123,6 @@
           <p class="text-slate-600 text-sm">Entfernung von Unkraut, Lockern der Erde und frische Bepflanzung passend zur Jahreszeit.</p>
         </div>
 
-        <!-- Beispiel Karte 2 -->
         <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 text-left">
           <div class="h-48 bg-slate-100 rounded-xl flex items-center justify-center text-slate-400 font-medium mb-4 border border-dashed border-slate-300 text-center px-4">
             Hier kann Ihr Bild eingefügt werden (Grabsteinreinigung)
